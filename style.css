@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:ital,wght@1,300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+#navbar{
+    background-color:#2d545e;
+    color: #fff5d7;
+    height: 50px;
+}
+#navbar ul{
+    list-style-type: none;
+    padding-left: 3%;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: larger;
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    /* background-color:#2d545e ; */
+    color:#2d545e ;
+}
+.container{
+    display: grid;
+    grid-template-columns:repeat(3,10vw);
+    grid-template-rows:repeat(3,10vw);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+}
+.box{
+    border: 2px solid #2d545e;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.box:hover{
+
+    background-color:#fff5d7 ;
+  
+}
+
+
+
+
+.gameInfo{
+    margin-left: 20px;
+    margin-top: 8px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.gameInfo h1{
+ font-size: 30px;
+}
+.imgBox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+    position: relative;
+    top: 40px;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right:0;
+}
+.bt-0{
+    border-top:0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.info{
+    font-size: 25px;;
+}
+#reset{
+    position: relative;
+    top:30px;
+    left:30px;
+    padding:4px 12px;
+    background-color: #2d545e;
+    border-radius: 5px;
+    color: #fff5d7;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+}
+@media screen and (max-width:800px)
+{
+.gameContainer{
+    flex-wrap: wrap;
+}
+.gameInfo{
+    margin:0;
+}
+.gameInfo h1{
+    text-align: center;
+}
+.container{
+    grid-template-columns:repeat(3,20vw);
+    grid-template-rows:repeat(3,20vw);
+}
+.box{
+    font-size: 15vw;
+}
+}
